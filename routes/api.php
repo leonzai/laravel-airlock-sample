@@ -16,3 +16,13 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::get('test', function () {
+    // 没有在 User 模型中 use HasApiTokens，下面就会报错。
+//    if (auth()->user()->tokenCan('update')) {
+//        return "can update";
+//    }
+//    return "can not update";
+    return "successful";
+})->middleware('auth:airlock');
