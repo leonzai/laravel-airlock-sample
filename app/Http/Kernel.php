@@ -2,6 +2,7 @@
 
 namespace App\Http;
 
+use Fruitcake\Cors\HandleCors;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 use Laravel\Airlock\Http\Middleware\EnsureFrontendRequestsAreStateful;
 
@@ -20,6 +21,7 @@ class Kernel extends HttpKernel
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+        HandleCors::class,
     ];
 
     /**
