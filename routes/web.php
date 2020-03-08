@@ -15,6 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('auth/register', 'Auth\AirlockSPAController@register');
-Route::post('auth/login', 'Auth\AirlockSPAController@login');
-Route::post('auth/logout', 'Auth\AirlockSPAController@logout')->middleware('auth:airlock');
+Route::post('login', 'Auth\LoginController@login');
+Route::post('logout', 'Auth\LoginController@log_out')->middleware('auth:airlock');
+Route::post('register', 'Auth\RegisterController@register');

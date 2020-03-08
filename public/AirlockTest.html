@@ -32,7 +32,7 @@
 
     function register() {
         let str = document.getElementById('username').value + '@qianjinyike.com';
-        axios.post(url + 'auth/register', {
+        axios.post(url + 'register', {
             email: str,
             name: str,
             password: 'qianjinyike.com',
@@ -51,7 +51,7 @@
     }
 
     function logout() {
-        axios.post(url + 'auth/logout')
+        axios.post(url + 'logout')
             .then(function (response) {
                 console.log(response.data);
             });
@@ -60,7 +60,7 @@
 
     function login() {
         let str = document.getElementById('username').value + '@qianjinyike.com';
-        axios.post(url + 'auth/login', {
+        axios.post(url + 'login', {
             email: str,
             password: 'qianjinyike.com',
         })
