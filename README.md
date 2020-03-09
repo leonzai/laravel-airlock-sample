@@ -1,5 +1,7 @@
 # Laravel Airlock Sample
 
+[https://qianjinyike.com/laravel-airlock/](https://qianjinyike.com/laravel-airlock/)
+
 中文在下方。
 
 ## Clone
