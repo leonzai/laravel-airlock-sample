@@ -27,11 +27,15 @@
     // axios.defaults.xsrfCookieName = 'XSRF-TOKEN';
     // axios.defaults.xsrfHeaderName = 'X-CSRF-TOKEN';
     function csrf() {
-        axios.get(url + 'airlock/csrf-cookie');
+        axios.get(url + 'airlock/csrf-cookie').then(function(){console.log("got it.");});
     }
 
     function register() {
+		let username=document.getElementById('username').value;
         let str = document.getElementById('username').value + '@qianjinyike.com';
+		if(!username){
+			alert("input name");return false;
+		}
         axios.post(url + 'register', {
             email: str,
             name: str,
@@ -59,7 +63,11 @@
 
 
     function login() {
+		let username=document.getElementById('username').value;
         let str = document.getElementById('username').value + '@qianjinyike.com';
+		if(!username){
+			alert("input name");return false;
+		}
         axios.post(url + 'login', {
             email: str,
             password: 'qianjinyike.com',
