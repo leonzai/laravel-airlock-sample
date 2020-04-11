@@ -1,3 +1,7 @@
+> 视频教程：[https://www.bilibili.com/video/av95269923](https://www.bilibili.com/video/av95269923 "https://www.bilibili.com/video/av95269923")
+> 视频教程：[https://www.bilibili.com/video/av96038774](https://www.bilibili.com/video/av96038774 "https://www.bilibili.com/video/av96038774")
+> 视频教程：[https://www.bilibili.com/video/av96088617](https://www.bilibili.com/video/av96088617 "https://www.bilibili.com/video/av96088617")
+
 # Laravel Airlock Sample
 
 [https://qianjinyike.com/laravel-airlock/](https://qianjinyike.com/laravel-airlock/)
